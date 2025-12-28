@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/movie_title"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <ImageButton
+            android:id="@+id/btnPrevImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_left"
+            android:contentDescription="previous image" />
+
+        <ImageView
+            android:id="@+id/posterImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_movie_placeholder" />
+
+        <ImageButton
+            android:id="@+id/btnNextImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_right"
+            android:contentDescription="next image" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/summaryShort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/movie_summary_short"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/btnShowFullSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_full_summary"
+        android:textColor="#000000"
+        android:background="@drawable/btn_transparent_border"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="2dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ticketQuantityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ticket_quantity_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"/>
+
+        <LinearLayout
+            android:id="@+id/ticketSelectorLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/btnMinus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:textSize="28sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="#DDDDDD"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/ticketCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="22sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/btnPlus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:textSize="28sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="#DDDDDD"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ageVipRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroupAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioAdult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adult" />
+
+                <RadioButton
+                    android:id="@+id/radioChild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/child" />
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/checkboxVIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vip_seating"
+                android:layout_marginLeft="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnSelectDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_date"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4FC3F7"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"/>
+
+            <TextView
+                android:id="@+id/selectedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/no_date_selected"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/theatreLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_theatre_label"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_transparent_border"
+            android:padding="4dp">
+
+            <Spinner
+                android:id="@+id/theatreSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/total_price_zero"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:gravity="start"/>
+
+        <Button
+            android:id="@+id/btnGetTickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_tickets"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#000000"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

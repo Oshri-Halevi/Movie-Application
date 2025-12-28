@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:text="@string/order_summary"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dialogDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/dialogCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D32F2F"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:layout_gravity="start"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/dialogConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#388E3C"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+</LinearLayout>

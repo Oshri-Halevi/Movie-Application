@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">פוסטר סרט</string>
+    <string name="movie_title">John Wick הסרט</string>
+    <string name="movie_summary">
+    ג׳ון וויק הוא סרט אקשן שמציג את דמותו של ג׳ון וויק, מתנקש לשעבר שחי חיים שקטים אחרי פרישה. כאשר פוגעים לו במשהו מאוד אישי ויקר, הוא מוצא את עצמו חוזר לעולם שהיה בטוח שנטש מאחור. הסרט מדגיש עולם סודי של מתנקשים עם חוקים משלו, סגנון לחימה ייחודי, ואווירה אפלה ומלאת מתח.
+</string>
+    <string name="tickets_count_label">כרטיסים:</string>
+    <string name="adult">מבוגר</string>
+    <string name="child">ילד</string>
+    <string name="select_date">בחר תאריך</string>
+    <string name="no_date_selected">לא נבחר תאריך</string>
+    <string name="select_theatre_label">בחר קולנוע</string>
+    <string name="vip_seating">מושב VIP (+$5 לכל כרטיס)</string>
+    <string name="total_price_zero">סך הכול: $0</string>
+    <string name="get_tickets">הזמן כרטיסים</string>
+    <string name="order_summary">סיכום הזמנה</string>
+    <string name="confirm">אשר</string>
+    <string name="cancel">בטל</string>
+    <string name="order_placed">ההזמנה בוצעה בהצלחה!</string>
+    <string name="movie_summary_short">
+    מתנקש לשעבר שנאלץ לחזור לעולם האלים לאחר שמאבדים לו משהו יקר...
+</string>
+    <string name="show_full_summary">הצג תקציר מלא...</string>
+    <string name="close">סגור</string>
+    <string name="ticket_quantity_title">בחירת כמות כרטיסים</string>
+    <string-array name="theatres_list">
+        <item>יס פלנט - ראשון לציון</item>
+        <item>יס פלנט - תל אביב</item>
+        <item>יס פלנט - ירושלים</item>
+        <item>יס פלנט - הרצליה</item>
+    </string-array>
+</resources>
